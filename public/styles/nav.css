@@ -9,3 +9,23 @@ nav {
 nav span {
   font-family: 'Bungee', sans-serif;
 }
+
+/* Add styles for the "Write a new tweet" section */
+.new-tweet {
+  float: right;
+  margin-right: 1.5em;
+  line-height: 120px;
+}
+
+.new-tweet a {
+  color: #ffffff;
+  font-family: 'Bungee', cursive;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.new-tweet i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
