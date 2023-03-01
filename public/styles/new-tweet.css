@@ -31,3 +31,7 @@ button {
   color: gray;
   margin-left: 1rem;
 }
+
+.counter.invalid {
+  color: red;
+}
