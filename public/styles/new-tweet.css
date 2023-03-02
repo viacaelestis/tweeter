@@ -35,3 +35,60 @@ button {
 .counter.invalid {
   color: red;
 }
+
+/* Style the tweet element */
+.tweet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tweet-header {
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+
+.tweet-title {
+  margin: 0;
+}
+
+.tweet-body {
+  margin: 10px 0;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-author,
+.tweet-date {
+  margin: 0;
+}
+
+/* Define regular and hover states of the tweet */
+
+.tweet {
+  box-shadow: none;
+}
+
+.tweet-header {
+  background-color: #f5f5f5;
+}
+
+/* Hover state */
+.tweet:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tweet:hover .tweet-header {
+  background-color: #ddd;
+}
+
+/* Positioning of icons */
+.tweet-icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
