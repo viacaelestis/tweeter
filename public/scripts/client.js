@@ -29,3 +29,30 @@ const renderTweets = function(tweets) {
     $('#tweet-container').append($tweet);
   }
 }
+
+// Form submission using JQuery
+$(document).ready(function() {
+  // listen for form submit event
+  $('#tweet-form').submit(function(event) {
+    // prevent default form submission behavior
+    event.preventDefault();
+    
+    // serialize form data
+    const formData = $(this).serialize();
+    
+    // send data as POST request to server
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: formData
+    })
+    .then(function(response) {
+      // handle successful response from server
+      console.log(response);
+    })
+    .catch(function(error) {
+      // handle error response from server
+      console.log(error);
+    });
+  });
+});
