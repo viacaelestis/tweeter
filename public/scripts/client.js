@@ -26,6 +26,6 @@ const createTweetElement = (tweetData) => {
 const renderTweets = function(tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
+    $('#tweet-container').append($tweet);
   }
 }
