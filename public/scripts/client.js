@@ -56,3 +56,27 @@ $(document).ready(function() {
     });
   });
 });
+
+// fetch tweets from /tweets page
+
+$(document).ready(function() {
+
+  function loadTweets() {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        console.log(data);
+        // Render the tweets to the page
+      },
+      error: function(error) {
+        console.log('Error:', error);
+      }
+    });
+  }
+
+  // Call loadTweets to load tweets on page load
+  loadTweets();
+
+});
