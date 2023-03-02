@@ -92,3 +92,8 @@ button {
   bottom: 0;
   right: 0;
 }
+
+#error-message {
+  color: red;
+  font-weight: bold;
+}

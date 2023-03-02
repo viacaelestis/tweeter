@@ -82,3 +82,6 @@ $(document).ready(function() {
   loadTweets();
 
 });
+
+console.log("create tweet:", createTweetElement);
+console.log("render tweet:", renderTweets);
