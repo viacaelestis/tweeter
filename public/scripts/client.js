@@ -30,7 +30,6 @@ const renderTweets = function(tweets) {
   }
 }
 
-// add logic to make it redirect to /tweets
 // Form submission using JQuery
 $(document).ready(function() {
   // Get the error element and hide it
@@ -79,6 +78,8 @@ $(document).ready(function() {
       dataType: 'json',
       success: function(data) {
         console.log(data);
+        // Sort the tweets by their creation time in descending order
+        data.sort((a, b) => new Date(b.created_at - new Date(a.created_at)));
         // Render the tweets to the page
         renderTweets(data);
       },
