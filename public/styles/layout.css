@@ -62,3 +62,8 @@ main {
   margin: 0 auto;
   background-color: inherit;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

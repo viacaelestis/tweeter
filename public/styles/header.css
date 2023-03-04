@@ -5,7 +5,8 @@ header {
   justify-content: center;
   padding: 20px;
   background-color: #5383c3;
-  height: 400px;
+  height: 350px;
+  padding-top: 155px;
 }
 
 header .avatar {
@@ -35,3 +36,4 @@ body {
   background-size: cover;
   background-position: center;
 }
+

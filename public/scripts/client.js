@@ -30,8 +30,12 @@ const renderTweets = function(tweets) {
   }
 }
 
+// add logic to make it redirect to /tweets
 // Form submission using JQuery
 $(document).ready(function() {
+  // Get the error element and hide it
+  const $error = $('#error').hide();
+
   // listen for form submit event
   $('#tweet-form').submit(function(event) {
     // prevent default form submission behavior
@@ -51,10 +55,16 @@ $(document).ready(function() {
       console.log(response);
       // load tweets again to update the page with the new tweet
       loadTweets();
+      // hide the error message if it is currently visible
+      $error.slideUp();
     })
     .catch(function(error) {
       // handle error response from server
       console.log(error);
+      // get the error message from the server response
+      const errorMessage = error.responseJSON.error;
+      // set the text of the error element to the error message and show it
+      $error.text(errorMessage).slideDown();
     });
   });
 });
@@ -82,6 +92,3 @@ $(document).ready(function() {
   loadTweets();
 
 });
-
-console.log("create tweet:", createTweetElement);
-console.log("render tweet:", renderTweets);

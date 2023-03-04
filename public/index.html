@@ -63,7 +63,7 @@
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Michael Ocenar</h2>
       </div>
   </header>
 
@@ -71,10 +71,10 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
+        <form id="tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-           <!-- Add error message element here -->
+          <!-- Add error message element here -->
           <div id="error-message"></div>
           <div>
             <button type="submit">Tweet</button>
@@ -94,7 +94,6 @@
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-retweet"></i>
             <i class="fa-solid fa-heart"></i>
-          </div>
           </footer>
         </article>
       </section>
