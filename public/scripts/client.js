@@ -14,10 +14,13 @@ const createTweetElement = (tweetData) => {
   const $text = $('<p>').text(tweetData.content.text);
   const $footer = $('<footer>');
   const $timestamp = $('<p>').addClass('tweet-timestamp').text(timeago.format(tweetData.created_at));
+  const $flagIcon = $('<i>').addClass('fas fa-flag');
+  const $retweetIcon = $('<i>').addClass('fas fa-retweet');
+  const $likeIcon = $('<i>').addClass('fas fa-heart');
 
   $header.append($avatar).append($name).append($handle);
   $body.append($text);
-  $footer.append($timestamp);
+  $footer.append($timestamp).append($flagIcon).append($retweetIcon).append($likeIcon);
   $tweet.append($header).append($body).append($footer);
 
   return $tweet;
