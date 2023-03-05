@@ -6,7 +6,7 @@
 
 const createTweetElement = (tweetData) => {
   const $tweet = $('<article>').addClass('tweet');
-  const $header = $('<header>');
+  const $header = $('<header>').addClass('tweet-header');
   const $avatar = $('<img>').attr('src', tweetData.user.avatars);
   const $name = $('<h2>').addClass('tweet-title').text(tweetData.user.name);
   const $handle = $('<p>').addClass('tweet-handle').text(tweetData.user.handle);

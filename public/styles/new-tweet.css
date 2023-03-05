@@ -54,12 +54,11 @@ button {
 }
 
 .tweet-title {
-  margin-left: 10px;
-  margin: 0;
+  margin-right: 10px;
 }
 
 .tweet-handle {
-  margin-left: 10px;
+  margin-left: auto;
 }
 
 .tweet-body {
