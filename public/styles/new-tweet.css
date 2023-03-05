@@ -65,9 +65,13 @@ button {
   margin: 10px 0;
 }
 
-.tweet-footer {
+.tweet-footer{
   display: flex;
   justify-content: space-between;
+}
+
+.tweet-footer .icon:hover {
+  color: red;
 }
 
 .tweet-timestamp {

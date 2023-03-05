@@ -17,7 +17,7 @@ const createTweetElement = (tweetData) => {
   const $flagIcon = $('<i>').addClass('icon fas fa-flag');
   const $retweetIcon = $('<i>').addClass('icon fas fa-retweet');
   const $likeIcon = $('<i>').addClass('icon fas fa-heart');
-
+  
   $header.append($avatar).append($name).append($handle);
   $body.append($text);
   $footer.append($timestamp).append($flagIcon).append($retweetIcon).append($likeIcon);
