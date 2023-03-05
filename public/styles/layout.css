@@ -67,3 +67,20 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  /* Hide sidebar on small screens */
+  .sidebar {
+    display: none;
+  }
+}
