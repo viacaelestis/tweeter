@@ -28,6 +28,9 @@ Tweeter is a simple, single-page Twitter clone that I built to practice my front
 
 ## Screenshots
 
+![tweeter nav](https://github.com/viacaelestis/tweeter/blob/master/docs/tweeter-pic1.png)
+![tweeter tweets](https://github.com/viacaelestis/tweeter/blob/master/docs/tweeter-pic2.png)
+
 ## Future Enhancements
 
 Here are some potential future enhancements for the app:
