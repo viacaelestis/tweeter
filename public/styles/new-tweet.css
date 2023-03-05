@@ -68,7 +68,10 @@ button {
 .tweet-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.tweet-timestamp {
+  margin-right: auto;
 }
 
 .tweet-author,
