@@ -27,7 +27,7 @@ const createTweetElement = (tweetData) => {
 }
 
 const renderTweets = (tweets) => {
-  const $tweetList = $('#tweets-list');
+  const $tweetList = $('#tweet-container');
   $tweetList.empty();
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
@@ -104,11 +104,4 @@ $(document).ready(() => {
 
   // Call loadTweets to load tweets on page load
   loadTweets();
-});
-
-$(document).ready(function() {
-  // Add event listener for refresh button
-  $('#refresh-button').click(function() {
-    location.reload(); // Reload the current page
-  });
 });
