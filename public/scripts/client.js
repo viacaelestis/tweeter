@@ -31,7 +31,7 @@ const renderTweets = (tweets) => {
   $tweetList.empty();
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $('#tweet-container').append($tweet);
+    $tweetList.append($tweet);
   }
 }
 
