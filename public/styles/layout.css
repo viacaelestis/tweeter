@@ -1,8 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
 }
@@ -18,12 +13,10 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  display: flex;
+  flex-direction: row;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- /* Define the fonts */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -66,21 +59,19 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  flex-basis: 75%; /* Set the width of the main container element */
+  order: 2; /* Make the main container appear second in the source order */
+  flex: 2;
 }
 
-@media screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  .header {
-    font-size: 1.5rem;
-  }
-
-  /* Hide sidebar on small screens */
-  .sidebar {
-    display: none;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
   }
 }
+
+
+
+
+

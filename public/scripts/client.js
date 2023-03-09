@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 const createTweetElement = (tweetData) => {
   const $tweet = $('<article>').addClass('tweet');
   const $header = $('<header>').addClass('tweet-header');
@@ -28,6 +22,7 @@ const createTweetElement = (tweetData) => {
 
 const renderTweets = (tweets) => {
   const $tweetList = $('#tweet-container');
+  // empty tweet list before appending
   $tweetList.empty();
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);

@@ -7,6 +7,11 @@
   background-color: #5383c3;
   height: 350px;
   padding-top: 155px;
+  flex-basis: 25%; /* Set the width of the nav element */
+  order: 1; /* Make the nav appear first in the source order */
+  flex: 1;
+  margin-right: 3em;
+  margin-left: 3em;
 }
 
 header .avatar {
